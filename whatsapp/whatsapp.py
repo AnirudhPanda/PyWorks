@@ -36,6 +36,7 @@ def send_messages():
         while done:
             message = input("Enter the message you want to enter ")
             driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[2]/div/div[2]').send_keys(message)
+            
             time.sleep(three)
 
             driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[3]/button').click()
